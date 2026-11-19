@@ -8,14 +8,13 @@ Because it's free, Apple lets the app run for **7 days**. After that, plug the p
 
 ## Part A. Get the app file (Translator.ipa)
 
-The easy way: ask Claude in this thread for the latest **Translator.ipa** and download it.
+The easy way: open https://github.com/KnightCoderK/VoiceTranslator/releases/latest and click **Translator.ipa** under Assets. That's always the newest build.
 
-To build it yourself on GitHub:
+To start a fresh build yourself on GitHub:
 
 1. Open your GitHub repository (for example `github.com/<your-name>/VoiceTranslator`).
 2. Click **Actions** at the top, then **Build iPhone app** on the left, then **Run workflow** > **Run workflow**.
-3. Wait about 5 to 10 minutes for the green tick. Click the run, scroll to **Artifacts**, and click **Translator-ipa**.
-4. That downloads a .zip. Right-click it > **Extract All**. Inside is **Translator.ipa**.
+3. Wait a few minutes for the green tick. The new Translator.ipa then appears on the releases page above.
 
 ## Part B. Set up the laptop (one time)
 

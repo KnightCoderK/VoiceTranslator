@@ -25,6 +25,7 @@ targets:
       properties:
         CFBundleDisplayName: Translator
         UILaunchScreen: {}
+        UIRequiresFullScreen: true
         UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
         NSMicrophoneUsageDescription: Translator listens to people speaking Japanese or Portuguese so it can translate them into English.
         NSSpeechRecognitionUsageDescription: Translator turns speech into text so it can translate it into English.
