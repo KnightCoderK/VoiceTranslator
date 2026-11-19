@@ -1,6 +1,6 @@
 # Translator (iOS)
 
-> Want it in a browser instead? The web version is in [`web/`](web/README.md) and runs at https://knightcoderk.github.io/voicetranslator/
+> Want it in a browser instead? The web version is in [`web/`](web/README.md) and runs at https://knightcoderk.github.io/VoiceTranslator/
 
 Listens through the iPhone microphone and translates **Japanese** or **Brazilian Portuguese** speech into **English**, live. It shows the original words and the English side by side, and can read the English aloud.
 

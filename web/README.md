@@ -2,7 +2,7 @@
 
 The web version of Translator. Open it in a browser, speak **Japanese** or **Brazilian Portuguese**, and the English appears on screen, live. It can also read the English aloud.
 
-**Open it:** https://knightcoderk.github.io/voicetranslator/
+**Open it:** https://knightcoderk.github.io/VoiceTranslator/
 
 No install, no account, no API key. It works on a laptop and on a phone.
 
@@ -27,8 +27,8 @@ Shortcuts only work while the Translator tab is in front.
 
 Links that open straight into one language (good for bookmarks or home-screen icons):
 
-- Japanese: https://knightcoderk.github.io/voicetranslator/?lang=ja
-- Portuguese: https://knightcoderk.github.io/voicetranslator/?lang=pt
+- Japanese: https://knightcoderk.github.io/VoiceTranslator/?lang=ja
+- Portuguese: https://knightcoderk.github.io/VoiceTranslator/?lang=pt
 
 **Put it on your phone's home screen:** iPhone Safari: Share > Add to Home Screen. Android Chrome: menu > Add to Home screen (or Install app).
 
