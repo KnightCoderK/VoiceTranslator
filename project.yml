@@ -1,0 +1,52 @@
+name: VoiceTranslator
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    TARGETED_DEVICE_FAMILY: "1"
+    # Put your Apple Developer Team ID here, or pick the team in Xcode > Signing & Capabilities.
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+targets:
+  VoiceTranslator:
+    type: application
+    platform: iOS
+    sources:
+      - path: VoiceTranslator
+      - path: Shared
+    info:
+      path: VoiceTranslator/Info.plist
+      properties:
+        CFBundleDisplayName: Translator
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        NSMicrophoneUsageDescription: Translator listens to people speaking Japanese or Portuguese so it can translate them into English.
+        NSSpeechRecognitionUsageDescription: Translator turns speech into text so it can translate it into English.
+        UIBackgroundModes: [audio]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.VoiceTranslator
+    dependencies:
+      - target: TranslatorControls
+  TranslatorControls:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: TranslatorControls
+      - path: Shared
+    info:
+      path: TranslatorControls/Info.plist
+      properties:
+        CFBundleDisplayName: Translator Controls
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.VoiceTranslator.Controls
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: "$(inherited) WIDGET_EXTENSION"
