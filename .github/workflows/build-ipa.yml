@@ -6,9 +6,11 @@ on:
   workflow_dispatch:      # "Run workflow" button on the Actions tab
   push:
     branches: [main]
-    paths-ignore:          # Windows app changes don't need a new iPhone build
+    paths-ignore:          # Windows and web app changes don't need a new iPhone build
       - "windows/**"
       - ".github/workflows/build-windows.yml"
+      - "web/**"
+      - ".github/workflows/deploy-web.yml"
 
 permissions:
   contents: write         # lets the build publish Translator.ipa as a download
